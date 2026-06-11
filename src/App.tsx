@@ -11,13 +11,12 @@ import {
   EyeOff, 
   BookOpen,
   Home,
-  Sparkles,
-  Lock
 } from "lucide-react";
 import { CHAPTERS } from "./data/chapters";
 import { Reader } from "./components/Reader";
 import { EmailGate } from "./components/EmailGate";
 import { AppSettings } from "./types";
+import coverImg from "./assets/images/cover.png";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<"home" | "reader">("home");
@@ -267,10 +266,9 @@ export default function App() {
                      settings.isDarkMode ? "bg-gold-accent/5" : "bg-orange-600/5"
                    }`} />
                    <img 
-                     src="/Captura de tela 2026-06-05 131524.png" 
-                     alt="Protoclo Sono de Ouro"
+                     src={coverImg} 
+                     alt="Protocolo Sono de Ouro"
                      className="w-full h-full rounded-full object-cover relative z-10"
-                     referrerPolicy="no-referrer"
                    />
                 </div>
               </motion.div>

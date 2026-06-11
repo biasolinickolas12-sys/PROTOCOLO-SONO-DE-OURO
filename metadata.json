@@ -1,0 +1,6 @@
+{
+  "name": "Sono de Ouro",
+  "description": "App de leitura do Protocolo Sono de Ouro para desligar a mente e acordar com energia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
